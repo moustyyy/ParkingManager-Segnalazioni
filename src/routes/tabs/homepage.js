@@ -1,25 +1,24 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Impostazioni from "./impostazioni";
 import Navbar from "../../components/navbar";
-import {FaSquareParking} from "react-icons/fa6";
-
+import { FaSquareParking } from "react-icons/fa6";
 
 const Homepage = () => {
     return (
         <>
             <div style={styles.header}>
-                <div style={{display: 'flex', alignItems: 'center', gap: '20px', justifyContent: 'center'}}>
-                    <FaSquareParking size={100} style={{color: '#3498db'}}/>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '20px', justifyContent: 'center' }}>
+                    <FaSquareParking size={100} style={{ color: '#3498db' }} />
                     <h1 style={styles.title}>Parking Manager</h1>
                 </div>
             </div>
-            <Navbar/>
+            <Navbar />
             <div className={"maps"}>
             </div>
         </>
     )
 }
+
+export default Homepage;
 
 const styles = {
     header: {
@@ -51,16 +50,3 @@ const styles = {
     },
 };
 
-const App = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Homepage/>}/>
-                <Route path="/impostazioni/*" element={<Impostazioni/>}/>
-                {/* Add more routes here */}
-            </Routes>
-        </Router>
-    );
-};
-
-export default App;
