@@ -1,6 +1,6 @@
+import React from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import ImpostazioniApp from "./impostazioni";
-import React from "react";
 import Homepage from "./homepage";
 
 const App = () => {

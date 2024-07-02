@@ -2,13 +2,14 @@ import React from 'react';
 import Navbar from "../../components/navbar";
 import { FaSquareParking } from "react-icons/fa6";
 
+
 const Homepage = () => {
     return (
         <>
-            <div style={styles.header}>
+            <div className={"header"}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px', justifyContent: 'center' }}>
                     <FaSquareParking size={100} style={{ color: '#3498db' }} />
-                    <h1 style={styles.title}>Parking Manager</h1>
+                    <h1 className={"title"}>Parking Manager</h1>
                 </div>
             </div>
             <Navbar />

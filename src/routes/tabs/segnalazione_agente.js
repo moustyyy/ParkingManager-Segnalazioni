@@ -45,7 +45,7 @@ export default function SegnalazioneAgente() {
                 <BackButton />
                 <h1>Segnalazione Vigilanza</h1>
             </div>
-            <button style={styles.button} onClick={inviaSegnalazione}>
+            <button style={styles.button} onClick={inviaSegnalazione} >
                 Invia Segnalazione
             </button>
         </div>

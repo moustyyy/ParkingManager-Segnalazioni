@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import {IoMdSettings} from "react-icons/io";
 import {IoHomeSharp} from "react-icons/io5";
+import Styles from "../style.css";
 
 const Navbar = () => {
     return (
